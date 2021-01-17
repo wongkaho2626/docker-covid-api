@@ -1,4 +1,4 @@
-FROM node:10.15.3-alpine
+FROM node:15.6.0
 WORKDIR /app
 ADD . /app
 RUN npm install

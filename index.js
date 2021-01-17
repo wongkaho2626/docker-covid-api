@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
   res.send("Hello world");
 });
 
-app.get('/covid19/cases', (req, res) => {
+app.get('/api/1.0/covid19/cases', (req, res) => {
 	axios({
 		method: 'get',
 		url: 'http://www.chp.gov.hk/files/misc/enhanced_sur_covid_19_eng.csv',
@@ -30,7 +30,7 @@ app.get('/covid19/cases', (req, res) => {
 	})
 });
 
-app.get('/covid19/building', (req, res) => {
+app.get('/api/1.0/covid19/building', (req, res) => {
 	axios({
 		method: 'get',
 		url: 'http://www.chp.gov.hk/files/misc/building_list_eng.csv',
@@ -49,7 +49,7 @@ app.get('/covid19/building', (req, res) => {
 	})
 });
 
-app.get('/covid19/statistics', (req, res) => {
+app.get('/api/1.0/covid19/statistics', (req, res) => {
 	axios({
 		method: 'get',
 		url: 'http://www.chp.gov.hk/files/misc/latest_situation_of_reported_cases_covid_19_eng.csv',
@@ -68,7 +68,7 @@ app.get('/covid19/statistics', (req, res) => {
 	})
 });
 
-app.get('/covid19/transport', (req, res) => {
+app.get('/api/1.0/covid19/transport', (req, res) => {
 	axios({
 		method: 'get',
 		url: 'http://www.chp.gov.hk/files/misc/flights_trains_list_eng.csv',
